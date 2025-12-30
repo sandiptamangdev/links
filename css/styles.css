@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "font-1";
+    src: url(/fonts/SpaceGrotesk.woff2);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "font-2";
+    src: url(/fonts/inter.woff2);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* fonts */
+    --space-grotesk: font-1;
+    --inter: font-2;
+
+    /* colors */
+    --main-bg: #111827;
+    --card-bg: #1f2937;
+    --border: #374151;
+    --text: #d1d5db;
+    --text-bright: #f9fafb;
+    --accent: #4f46e5;
+    --accent-hover: #6366f1;
+    --accent-active: #4b4f77;
+    --shadow: rgba(0,0,0,0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-family: var(--inter);
+    color: var(--text);
+}
+
+.titles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.title {
+    text-align: center;
+    font-family: var(--space-grotesk);
+}
+
+.sub-title {
+    text-align: center;
+    font-family: var(--space-grotesk);
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-bg);
+    padding: 1rem;
+}
+
+.card {
+    width: clamp(300px, 40vw + 5em, 500px);
+    background-color: var(--card-bg);
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid var(--border);
+    box-shadow: 0px 0px 8px 0px var(--shadow);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.links a {
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    background-color: var(--accent);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.links a:hover {
+    background-color: var(--accent-hover);
+    color: var(--text-bright)
+}
+
+.links a:active {
+    background-color: var(--accent-active);
+    color: var(--text-bright);
+}
