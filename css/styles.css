@@ -1,6 +1,6 @@
 @font-face {
     font-family: "font-1";
-    src: url(./fonts/SpaceGrotesk.woff2);
+    src: url(fonts/SpaceGrotesk.woff2);
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "font-2";
-    src: url(./fonts/inter.woff2);
+    src: url(fonts/inter.woff2);
     font-weight: normal;
     font-style: normal;
     font-display: swap;
