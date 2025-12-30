@@ -40,9 +40,11 @@
 
 html, body {
     height: 100%;
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: 1rem;
     font-family: var(--inter);
     color: var(--text);
+    background-color: var(--main-bg);
+
 }
 
 .titles {
@@ -54,6 +56,7 @@ html, body {
 }
 
 .title {
+    font-size: clamp(2rem, 4vw, 3rem);
     text-align: center;
     font-family: var(--space-grotesk);
 }
@@ -68,12 +71,13 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--main-bg);
     padding: 1rem;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .card {
-    width: clamp(300px, 40vw + 5em, 500px);
+    width: 90%;
     background-color: var(--card-bg);
     margin: 0 auto;
     padding: 1rem;
@@ -82,6 +86,17 @@ html, body {
     box-shadow: 0px 0px 8px 0px var(--shadow);
 }
 
+@media (min-width: 768px) {
+    .card {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        width: 50%;
+    }
+}
 .links {
     display: flex;
     flex-direction: column;
